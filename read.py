@@ -18,3 +18,8 @@ for d in data:
 	if len(d) < 100:
 		new_data.append(d);
 print('total new data len is ', len(new_data));
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d);
+print('all have good is ', len(good));
