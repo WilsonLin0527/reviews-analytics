@@ -11,3 +11,10 @@ len_1 = 0;
 for d in data:
 	len_1 += len(d);
 print('average len is', len_1 / len(data));
+
+new_data = [];
+
+for d in data:
+	if len(d) < 100:
+		new_data.append(d);
+print('total new data len is ', len(new_data));
